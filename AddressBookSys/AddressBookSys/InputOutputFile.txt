@@ -1,0 +1,8 @@
+﻿First Name:Sangram
+Last Name:Behera
+Address:Banglore
+City:Banglore
+State:Karnataka
+Zip:560037
+PhoneNumber:+91 7077445649
+EmailId:sk19@gmail.com

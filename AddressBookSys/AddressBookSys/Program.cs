@@ -9,7 +9,7 @@ namespace AddressBook
         {
             Console.WriteLine("WelCome To Address Book Program");
             bool end = true;
-            Console.WriteLine("SelectNumber\n1)Sorting alphabetically by Person’s name\n2)End Of Program");
+            Console.WriteLine("SelectNumber\n1)Sorting alphabetically by Person’s name\n2)Sorting Persons Contacts By City \n3)Sorting Persons Contacts By State \n4)Sorting Persons Contacts By Zip \n5)Writing AddressBook Using File IO \n6)Reading AddressBook Using File IO\n7)End Of Program");
             Contact contact = new Contact();
             AddressBookMain addContact = new AddressBookMain();
             while (end)
@@ -22,6 +22,24 @@ namespace AddressBook
                         addContact.SortingContactsByName();
                         break;
                     case 2:
+                        Console.WriteLine("Sorting Persons Contacts by City");
+                        addContact.SortingContactsByCity();
+                        break;
+                    case 3:
+                        Console.WriteLine("Sorting Persons Contacts by State");
+                        addContact.SortingContactsByState();
+                        break;
+                    case 4:
+                        Console.WriteLine("Sorting Persons Contacts by Zip");
+                        addContact.SortingContactsByZip();
+                        break;
+                    case 5:
+                        addContact.WriteToTextFile();
+                        break;
+                    case 6:
+                        addContact.ReadFileIO();
+                        break;
+                    case 7:
                         end = false;
                         Console.WriteLine("Program Is Ended");
                         break;
@@ -30,4 +48,5 @@ namespace AddressBook
             }
         }
     }
+        
 }
